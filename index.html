@@ -21,8 +21,11 @@
       </nav>
   </header>
   <main>
-    <section id="hero">Home intro</section>
-    <section id="about">
+    <section id="hero" data-aos="fade-up">
+        <h1>Hi! I'm Keerthi</h1>
+        <p>CS student @ UMass Amherst</p>
+    </section>
+    <section id="about" data-aos="fade-right">
         <h2>About Me</h2>
         <p>
           I'm a junior at UMass Amherst pursuing a degree in Computer Science.
@@ -38,10 +41,25 @@
           Outside of building projects, I enjoy dancing, listening to music, and connecting with other developers.
         </p>
       </section>
-    <section id="skills">Skills</section>
-    <section id="projects">Projects</section>
-    <section id="resume">Resume</section>
-    <section id="contact">Contact</section>
+    <section id="skills" data-aos="zoom-in">Skills</section>
+    <section id="projects" data-aos="flip-up">
+        <h2>Projects</h2>
+        <div class="project-card" data-aos="flip-left">
+            <h3>WiDS ADHD Classifier</h3>
+            <!--project info summary-->
+        </div>
+        <div class="project-card" data-aos="flip-right">
+            <h3>Borrower Prepayment Prediction</h3>
+            <!--project info summary-->
+        </div>
+    </section>
+    <section id="resume" data-aos="flip-up">
+        <h2>Resume</h2>
+    </section>
+    <section id="contact" data-aos="flip-down">
+        <h2>Contact</h2>
+        <!--Contact info (email, linkedin, github, etc.)-->
+    </section>
   </main>
 
   <footer>
@@ -49,7 +67,10 @@
   </footer>
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script>
-    AOS.init();
+    AOS.init({
+        duration: 800,
+        once: true
+    });
   </script>
 </body>
 </html>
